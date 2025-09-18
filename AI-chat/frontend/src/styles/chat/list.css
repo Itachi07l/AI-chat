@@ -1,0 +1,10 @@
+.messages{ display:flex; flex-direction:column; gap:18px; padding:28px 40px; min-height:calc(100vh - 220px); overflow:auto; scrollbar-width: none; -ms-overflow-style: none; }
+.messages::-webkit-scrollbar{ width:0; height:0 }
+.message{ max-width:100%; display:flex }
+.message.user{ justify-content:flex-end }
+.message.ai{ justify-content:flex-start }
+.message .message-body{ padding:14px 18px; border-radius:18px; max-width:760px; word-wrap:break-word; color:var(--text); box-shadow: 0 6px 18px rgba(0,0,0,0.5); transform-origin: bottom center; animation: pop-in .14s cubic-bezier(.2,.9,.2,1) }
+.message.user .message-body{ background: linear-gradient(90deg, rgba(var(--accent-blue),0.06), rgba(255,255,255,0.03)); border:1px solid rgba(var(--accent-blue),0.06); }
+.message.ai .message-body{ background: linear-gradient(90deg, rgba(var(--accent-purple),0.04), rgba(255,255,255,0.02)); box-shadow: 0 6px 26px rgba(var(--accent-purple),0.03); }
+
+@keyframes pop-in{ from{ opacity:0; transform: translateY(6px) scale(.995) } to{ opacity:1; transform: translateY(0) scale(1) } }

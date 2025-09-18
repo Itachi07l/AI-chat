@@ -1,0 +1,48 @@
+/* Centralized theme variables (clean dark-first monochrome tokens) */
+:root {
+  /* core colors - stored as rgb components to use with rgb(var(--...)) */
+  --bg: 18 18 18;           /* page background */
+  --card: 28 28 28;         /* panels / cards */
+  --text: 235 235 235;      /* primary text */
+  --muted: 140 140 140;     /* secondary text */
+  --border: 36 36 36;       /* subtle separators */
+  --primary: 255 255 255;   /* accent (white) */
+  --primary-contrast: 18 18 18;
+  /* additional accents */
+  --accent-purple: 128 90 255; /* dark purple */
+  --accent-blue: 48 140 255; /* blue accent */
+  --accent-gradient: linear-gradient(90deg, rgba(var(--accent-purple),0.12), rgba(var(--accent-blue),0.12));
+
+  /* layout tokens */
+  --gap: 16px;
+  --container-max: 980px;
+
+  /* typography */
+  --fs-lg: 1.125rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.875rem;
+}
+
+/* light theme fallback */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: 255 255 255;
+    --card: 255 255 255;
+    --text: 33 53 71;
+    --muted: 99 115 129;
+    --border: 230 230 230;
+    --primary: 30 80 255;
+    --primary-contrast: 255 255 255;
+  }
+}
+
+/* explicit override class if needed */
+.theme-dark {
+  --bg: 18 18 18;
+  --card: 28 28 28;
+  --text: 235 235 235;
+  --muted: 140 140 140;
+  --border: 36 36 36;
+  --primary: 255 255 255;
+  --primary-contrast: 18 18 18;
+}

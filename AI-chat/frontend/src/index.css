@@ -1,0 +1,7 @@
+@import './styles/_variables.css';
+@import './styles/auth.css';
+@import './styles/theme.css';
+
+/* Global small helpers */
+*{ box-sizing: border-box; }
+a{ color: inherit; text-decoration: underline; }

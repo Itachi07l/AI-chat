@@ -1,0 +1,7 @@
+.chat-header{ background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); padding:18px 0; border-bottom:1px solid rgba(255,255,255,0.03); box-shadow: 0 6px 20px rgba(0,0,0,0.45); }
+.chat-header-title{ padding-left: 30px; font-size:var(--fs-lg); font-weight:700; color:var(--text); display:flex; align-items:center; gap:12px }
+.chat-header .subtle{ color:var(--muted); font-weight:500; font-size:var(--fs-sm) }
+.chat-header .controls button{ background:transparent; border:1px solid rgba(255,255,255,0.03); padding:8px 10px; border-radius:8px; color:var(--text); transition: transform .12s ease, background .12s ease }
+.chat-header .controls button:hover{ transform: translateY(-2px); background: rgba(255,255,255,0.02) }
+.chat-header .controls .header-delete{ border-radius:9999px; width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center }
+.chat-header .controls .header-delete:hover{ background: linear-gradient(90deg, rgba(var(--accent-purple),0.16), rgba(var(--accent-blue),0.12)); color: rgb(var(--primary)); transform: translateY(-2px) }
