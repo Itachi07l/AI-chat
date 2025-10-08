@@ -2,7 +2,7 @@ const chatModel=require('../models/chat.model');
 const aiService = require('../services/ai.service');
 const message=require("../models/message.model");
 async function createChat(req,res){
-        try {
+        try { 
                 const {title}=req.body;
                 const user=req.user;
                 const chat=await chatModel.create({user:user._id,title});
@@ -50,5 +50,6 @@ async function getMessage(req,res){
         res.status(500).json({ message: "Something went wrong" });
     }
 }
+
 
 module.exports={createChat, respond,getChats,getMessage};
