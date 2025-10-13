@@ -2,7 +2,7 @@ const usermodels=require('../models/user.model');
 const bcrypt=require('bcrypt');
 const jwt=require('jsonwebtoken');
  
-async function registerUser(req,res){
+async function registerUser(req,res){ 
     try {
         const {fullname:{firstName,lastName},email,password}=req.body;
         const user=await usermodels.findOne({email});
@@ -42,6 +42,7 @@ async function loginUser(req,res){
      
 
 module.exports={registerUser,loginUser};
+
 
 
 
