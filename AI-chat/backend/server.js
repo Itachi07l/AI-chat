@@ -1,6 +1,6 @@
 require('dotenv').config(); 
 const app=require('./src/app');
-const initSockets=require('./src/sockets/socket.server');
+const initSockets=require('./src/sockets/socket.server'); 
 const { createServer } = require("http");
 const httpServer = createServer(app); 
      
@@ -11,4 +11,5 @@ httpServer.listen(3000, () =>{
   
 
  
+
 
