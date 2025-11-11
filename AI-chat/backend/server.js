@@ -1,4 +1,4 @@
-require('dotenv').config(); 
+require('dotenv').config();
 const app=require('./src/app');
 const initSockets=require('./src/sockets/socket.server'); 
 const { createServer } = require("http");
@@ -9,6 +9,7 @@ httpServer.listen(3000, () =>{
     console.log(`Server started on port 3000`) 
 });
   
+
 
 
 
